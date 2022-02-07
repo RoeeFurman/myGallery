@@ -6,23 +6,32 @@ var gProjs;
 
 function createProjects(projectsNum) {
     var projects = [];
-    for (var i = 0; i < projectsNum; i++) {
-        projects[i] = createProject('pacman', 'pacman',
-            'best game ever', 'very good practice',
-            'https://github.com/RoeeFurman/myGallery')
-    }
+    
+    projects[0] = createProject('pacman', 'Pacman','best game ever', 'very good practice', 'https://roeefurman.github.io/Pacman/', 'pacman.jfif');
+    projects[1] = createProject('MineSweeper', 'MineSweeper','best game ever', 'very good practice', 'https://roeefurman.github.io/Mine-Sweeper/',
+     'minesweeper.jpeg');
+    // for (var i = 0; i < projectsNum; i++) {
+    //     projects[i] = createProject('pacman', 'pacman',
+    //         'best game ever', 'very good practice',
+    //         'https://github.com/RoeeFurman/myGallery')
+    // }
     return projects;
 }
 
-function createProject(id, name, title, desc, url, lables) {
+function createProject(id, name, title, desc, url, imgSRC, lables) {
     return {
         id,
         name,
         title,
         desc,
         url,
-        // imgSRC,
+        imgSRC,
         publishedAt: Date.now(),
         lables
     }
+}
+
+
+function getProjById(id){
+    return gProjs.find(proj => proj.id=== id);
 }
