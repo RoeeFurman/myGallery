@@ -13,6 +13,8 @@ function createProjects(projectsNum) {
     projects[2] = createProject('Touch-Nums', 'Touch-Nums','best game ever', 'very good practice', '','touch-nums.png');
     projects[3] = createProject('Ball-board', 'Ball-board','best game ever', 'very good practice', '','ballboard.png');
     projects[4] = createProject('Chess', 'Chess','best game ever', 'very good practice', '','chess.png');
+    projects[5] = createProject('Todo', 'Todo','best game ever', 'very good practice', '','todo.png');
+    projects[6] = createProject('Book Shop', 'Book Shop','best game ever', 'very good practice', '','bookshop.png');
     // for (var i = 0; i < projectsNum; i++) {
     //     projects[i] = createProject('pacman', 'pacman',
     //         'best game ever', 'very good practice',
