@@ -58,12 +58,10 @@ function onOpenModal(id) {
 
 
 function onSubmit() {
-    // var $elNameVal = $('.form-control').val()
     var $elSubjectVal = $('.subject-value').val()
     var $elBodyVal = $('.body-value').val()
 
     var url = `https://mail.google.com/mail/?view=cm&fs=1&to=roeefurman1@gmail.com&su=${$elSubjectVal}&body=${$elBodyVal}`;
-    //    console.log(url);
 
     window.open(url, '_blank');
 
