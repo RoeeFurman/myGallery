@@ -62,6 +62,7 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: #fed136;
 }
+
 .offcanvas-btn {
     z-index: 100000;
     position: fixed;
