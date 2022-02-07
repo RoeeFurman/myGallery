@@ -22,7 +22,7 @@ function renderProjects() {
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img class="img-fluid" src="img/portfolio/${project.imgSRC}" alt="">
+          <img width="500px" height="500px" class="img-fluid" src="img/portfolio/${project.imgSRC}" alt="">
         </a>
         <div class="portfolio-caption">
           <h4>${project.name}</h4>
