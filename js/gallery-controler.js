@@ -8,21 +8,18 @@ function init() {
     renderProjects();
 }
 
-// createProjects(gProjectsNum);
-// renderProjects();
-
 function renderProjects() {
 
     var strHTMLs = gProjs.map(project =>
-        `<div class="col-md-4 col-sm-6 portfolio-item">
+        `<div class="col-md-4 col-sm-6 portfolio-item ">
         <a class="portfolio-link" data-toggle="modal" onclick="onOpenModal('${project.id}')" href="#portfolioModal1">
 
           <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
+            <div class="portfolio-hover-content ">
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img width="500px" height="500px" class="img-fluid" src="img/portfolio/${project.imgSRC}" alt="">
+          <img width="500px" height="500px" class="img-fluid rounded-top" src="img/portfolio/${project.imgSRC}" alt="">
         </a>
         <div class="portfolio-caption">
           <h4>${project.name}</h4>
@@ -31,18 +28,14 @@ function renderProjects() {
         </div>
         </div>`);
 
-    // document.querySelector('.projects-row').innerHTML = strHTMLs.join('');
     var $elDiv = $('.projects-row');
     return $elDiv.html(strHTMLs);
 
-    // <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-    // document.querySelector('.todos-total-count').innerText = getTodosCount()
-    // document.querySelector('.todos-active-count').innerText = getActiveTodosCount()
 }
 
 function onOpenModal(id) {
     console.log('opening ', id);
-    // window.location.href = "#portfolioModal1";
+
     var currProj = getProjById(id);
     console.log(currProj);
 
